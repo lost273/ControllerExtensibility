@@ -17,6 +17,7 @@ namespace ControllerExtensibility.Controllers
                 ActionName = "Index"
             });
         }
+        [ActionName("Enumerate")]
         public ViewResult List () {
             return View("Result", new Result {
                 ControllerName = "Customer",
